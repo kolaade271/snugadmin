@@ -1,0 +1,130 @@
+a {
+    text-decoration: none;
+
+}
+
+.fab {
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+
+}
+
+.FabInner {
+    position: relative;
+}
+
+.FabButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #F79348;
+
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.FabButton .fa {
+    font-size: 15px !important;
+}
+
+.FabButton.open,
+.FabButton:hover,
+.FabButton:focus,
+.FabButton:active {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.FabButton .fa {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.FabButton.open .fa {
+    transform: rotate(270deg);
+}
+
+.fabclose {
+    display: none;
+}
+
+.fabopen {
+    display: open;
+}
+
+.fabMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    /* width: 200px; */
+    /* display: none; */
+}
+
+.fabMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+li.adminl {
+    background-color: red;
+}
+
+li.notice {
+    background: #3D24BD;
+
+}
+
+li.noticeu {
+    background: #5230FC;
+
+}
+
+li.adadmin {
+    background: #1C1057;
+
+}
+
+.fabMenu li a {
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+
+    letter-spacing: 0.2px;
+    padding: 4px 16px;
+    gap: 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.4s;
+}
+
+.fabMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.icon {
+    margin-top: 35%;
+
+    color: #222222;
+}
